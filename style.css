@@ -84,16 +84,17 @@ footer {
 
 .fa {
     /* padding: 20px; */
-    /* font-size: 30px; */
+    font-size: 1.0em;
     /* width: 30px; */
     text-align: left;
     text-decoration: none;
     /* border-radius: 50%; */
 }
 
-.fa-instagram .fa-strava{
+.fa-instagram .fa-strava .fa-brands .fa-regular {
     background: #18222E;
     color: #D29D33;
+    font-size: 1.0em;
 }
 
 a {
