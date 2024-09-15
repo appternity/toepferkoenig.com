@@ -21,13 +21,20 @@ h2 {
     text-transform: uppercase;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+}
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     background-color: #337373;
-    border-radius: 5%;
+    border-radius: 4%;
 }
 
 .card img {
@@ -41,12 +48,27 @@ h2 {
     justify-content: center;
 }
 
-.container {
+li {
+    padding-top: 0.5em;
+}
+
+footer {
+    height: 150px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-
+    color: #D29D33;
+    margin-top: 2em;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #18222E;
+    color: #D29D33;
+    padding-left: 2em;
+}
+
 
 .fa {
     padding: 20px;
@@ -58,6 +80,13 @@ h2 {
 }
 
 .fa-instagram {
-    background: #448986;
+    background: #18222E;
     color: #D29D33;
+}
+
+a {
+    color: #D29D33;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 100;
 }
