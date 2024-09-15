@@ -17,7 +17,7 @@ jobs:
           # ftp password
           password: ${{ secrets.TK_HOSTING_FTP_USER_SECRET }}
           # Server port to connect to (read your web hosts docs)
-          port: 21
+          port: 990
           # protocol to deploy with - ftp, ftps, or ftps-legacy
           protocol: ftps-legacy
           # Folder to upload from, must end with trailing slash /
