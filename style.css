@@ -5,6 +5,8 @@
 body {
     background-color: #448986;
     color: #D29D33;
+    font-family: Helvetica;
+    font-size: 1em;
 }
 
 h1 {
@@ -94,7 +96,7 @@ footer {
 .fa-instagram .fa-strava .fa-brands .fa-regular {
     background: #18222E;
     color: #D29D33;
-    font-size: 1.0em;
+    /* font-size: 1.0em; */
 }
 
 a {
