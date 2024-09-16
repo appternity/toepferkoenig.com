@@ -1,5 +1,5 @@
-name: FTP Deploy to PROD
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Deploy to STAGE
+run-name: ${{ github.actor }} merged in [main] branch
 on:
   push:
     branches:
@@ -8,10 +8,10 @@ jobs:
   web-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
+      - name: Checkout [main]
         uses: actions/checkout@v4
 
-      - name: FTP Deploy
+      - name: Publish to [stage.toepferkoenig.com]
         # You may pin to the exact commit or the version.
         # uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -19,7 +19,7 @@ jobs:
           # ftp server
           server: toepferkoenig.com
           # ftp username
-          username: 12397f579
+          username: 12397f133534
           # ftp password
           password: ${{ secrets.TK_HOSTING_FTP_USER_SECRET }}
           # Server port to connect to (read your web hosts docs)
@@ -29,7 +29,7 @@ jobs:
           # Folder to upload from, must end with trailing slash /
           local-dir: ./
           # Path to upload to on the server. Must end with trailing slash /
-          server-dir: htdocs/toepferkoenig_com/
+          server-dir: htdocs/stage/
           # Path and name of the state file - this file is used to track which files have been deployed
           state-name: sync-state.json
           # Prints which modifications will be made with current config options, but doesnt actually make any changes
