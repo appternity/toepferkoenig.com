@@ -1,0 +1,5 @@
+baseURL = 'https://toepferkoenig.com/'
+languageCode = 'de-de'
+title = 'Töpferkönig'
+[params]
+  subtitle = 'Bergzeitfahren Oybin'
