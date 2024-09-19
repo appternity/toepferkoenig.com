@@ -1,5 +1,7 @@
 # Asset Folder
 asset/**
 
+node_modules/**
+
 # temp
 index_backup.html

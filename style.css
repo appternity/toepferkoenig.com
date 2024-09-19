@@ -2,6 +2,13 @@
     https://dev.to/linusmwiti21/best-practises-for-building-responsive-design-in-2024-48c4 
 */
 
+.header {
+    background-color: #448986;
+    color: #D29D33;
+    font-family: Helvetica;
+    font-size: 1em;
+}
+
 body {
     background-color: #448986;
     color: #D29D33;
@@ -23,11 +30,18 @@ h2 {
     text-transform: uppercase;
 }
 
+
+.teaser {
+    background-color: #448986;
+    color: #D29D33;
+    font-family: Helvetica;
+    font-size: 1.2em;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
-
 }
 
 .card {
@@ -57,6 +71,12 @@ h2 {
 
 .center {
     height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-header {
     display: flex;
     align-items: center;
     justify-content: center;
