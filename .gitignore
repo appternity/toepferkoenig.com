@@ -1,7 +1,11 @@
 # Asset Folder
 asset/**
 
+# Node Modules and Artifacts
 node_modules/**
 
 # temp
 index_backup.html
+
+# GitHub Action Deployment Sync State
+sync-state.json
