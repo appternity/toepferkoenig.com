@@ -1,4 +1,4 @@
-######################## production configuration ####################
+######################## GitHub Pages configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL: https://appternity.github.io/toepferkoenig.com/
 googleAnalytics:
