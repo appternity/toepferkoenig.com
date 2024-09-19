@@ -16,7 +16,7 @@ jobs:
     needs: build
     environment:
       name: stage
-      url: www.toepferkoenig.com/stage
+      url: https://www.toepferkoenig.com/stage
     steps:
       - name: Publish to [www.toepferkoenig.com/stage]
         # You may pin to the exact commit or the version.
