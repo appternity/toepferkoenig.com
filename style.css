@@ -2,11 +2,13 @@
     https://dev.to/linusmwiti21/best-practises-for-building-responsive-design-in-2024-48c4 
 */
 
-.header {
+.title {
     background-color: #448986;
-    color: #D29D33;
-    font-family: Helvetica;
-    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -14,6 +16,55 @@ body {
     color: #D29D33;
     font-family: Helvetica;
     font-size: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.0em;
+    padding-right: 2.0em;
+    color: #D29D33;
+    margin-top: 2.0em;
+}
+
+.teaser {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    color: #18222E;
+    background-color: #41817E;
+    border-radius: 2.0em;
+    padding: 1.5em;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+    color: #D29D33;
+    background-color: #18222E;
+    clear: both;
+    position: relative;
+    margin: 0;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 2em;
+}
+
+.footer_column_element {
+    padding-top: 1em;
 }
 
 h1 {
@@ -24,104 +75,82 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
     text-align: center;
+    font-size: 1.5em;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-
-.teaser {
-    background-color: #448986;
-    color: #D29D33;
-    font-family: Helvetica;
-    font-size: 1.2em;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: #337373;
-    border-radius: 4%;
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.card img {
-    width: 100%;
-    animation: fadeOut 2s forwards;
-    animation-timeline: scroll();
-}
-
-.center {
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.center-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 li {
     padding-top: 0.5em;
-}
-
-footer {
-    height: 150px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    color: #D29D33;
-    margin-top: 2em;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: #18222E;
-    color: #D29D33;
-    padding: 2em;
+    margin-left: -1em;
 }
 
 
 .fa {
-    /* padding: 20px; */
     font-size: 1.0em;
-    /* width: 30px; */
     text-align: left;
     text-decoration: none;
-    /* border-radius: 50%; */
 }
 
 .fa-instagram .fa-strava .fa-brands .fa-regular {
     background: #18222E;
     color: #D29D33;
-    /* font-size: 1.0em; */
 }
 
 a {
     color: #D29D33;
-    /* text-decoration: none; */
     font-size: 1em;
     font-weight: 100;
+}
+
+
+.accordions {
+    padding-left: 2.0em;
+    padding-right: 2.0em;
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+}
+
+.accordion {
+    background-color: #1E484E;
+    cursor: pointer;
+    padding: 1.2em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 1em;
+    color: #D29D33;
+}
+
+.active,
+.accordion:hover {
+    background-color: #18222E;
+}
+
+.accordion:after {
+    content: '+';
+    font-size: 1.4em;
+    float: right;
+    margin-left: 0.2em;
+}
+
+.active::after {
+    content: "-";
+    font-size: 1.4em;
+}
+
+.accordion_panel {
+    padding: 0 2.0em;
+    background-color: #1E484E;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #D29D33;
+    padding-left: 2.0em;
 }
