@@ -104,6 +104,11 @@ a {
     font-weight: 100;
 }
 
+.icon {
+    padding-left: 0.5em;
+    padding-right: 0.3em;
+    height: 16px;
+}
 
 .accordions {
     padding-left: 2.0em;
