@@ -32,3 +32,6 @@ partials/structure/stylesheet.html
 
 # Hugo
 .hugo_build.lock
+
+# GitHub Action FTP Deployment Sync State
+sync-state.json
