@@ -1,4 +1,4 @@
-baseURL = 'https://toepferkoenig.com/'
+baseURL = 'https://www.toepferkoenig.com/'
 languageCode = 'de-de'
 title = 'Töpferkönig'
 [params]
