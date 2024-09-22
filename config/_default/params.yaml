@@ -13,7 +13,7 @@ images: ["/img/logo_medium.png"]
 
 github:
   repo_url: "https://github.com/appternity/toepferkoenig.com/main"
-  show_edit_link: true
+  show_edit_link: false
 
 social_links:
   devstats: "" 
@@ -34,7 +34,16 @@ social_links:
   x: ""
   youtube: ""
 
+# Header
+showHeader: true
+
 # Makes the header sticky on tall screens
 sticky_header: true
+
 # Enable search in header UI
 show_search: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
