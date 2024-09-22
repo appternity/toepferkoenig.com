@@ -7,11 +7,14 @@ title: "Töpferkönig"
 timeZone: "Europe/Berlin"
 cleanDestinationDir: true
 enableRobotsTXT: true
+build:
+  writeStats: true
+
 ######################## i18n ####################
 # Auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 hasCJKLanguage: true
 # Set default content directory for multilingual
-contentDir: content/de/
+contentDir: content/de
 # Set fallback if international version is not available
 defaultContentLanguage: de
 # Set the default language as the root rather than in folder i.e. don't use /en/
