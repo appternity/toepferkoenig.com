@@ -1,5 +1,5 @@
 baseURL = 'https://www.toepferkoenig.com/'
-languageCode = 'de-de'
+languageCode = 'en-US'
 title = 'Töpferkönig'
 [params]
   subtitle = 'Bergzeitfahren Oybin'
