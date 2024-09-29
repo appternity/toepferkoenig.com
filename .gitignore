@@ -1,8 +1,10 @@
 # Asset Folder
 asset/**
 
-# Node Modules and Artifacts
+# Hugo Objects
 node_modules/**
+public/**
+themes/**
 
 # temp
 index_backup.html
