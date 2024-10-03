@@ -158,3 +158,18 @@ a {
     color: #D29D33;
     padding-left: 2.0em;
 }
+
+.action_button {
+    background-color: #D29D33;
+    color: #1E484E;
+    cursor: hand;
+    padding: 0.66em;
+    text-align: left;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-decoration: none;
+}
